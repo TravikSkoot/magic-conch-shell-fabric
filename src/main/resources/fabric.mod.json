@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "magic-conch-shell",
+	"version": "${version}",
+	"name": "Magic Conch Shell",
+	"description": "A magical conch shell that gives random answers to your questions",
+	"authors": [
+		"TravikSkoot"
+	],
+	"contributors": [
+	  "LGXEN0 (Leonidas P.)"
+	],
+	"contact": {
+		"homepage": "https://github.com/TravikSkoot",
+		"sources": "https://github.com/TravikSkoot/magic-conch-fabric",
+		"issues": "https://github.com/TravikSkoot/magic-conch-fabric/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/magic-conch-shell/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.travikskoot.magicconchshell.MagicConchShell"
+		],
+		"fabric-datagen": [
+			"de.travikskoot.magicconchshell.MagicConchShellDataGenerator"
+		]
+	},
+	"mixins": [
+		"magic-conch-shell.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
