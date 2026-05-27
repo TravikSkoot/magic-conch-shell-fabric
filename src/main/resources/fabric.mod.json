@@ -11,9 +11,9 @@
 	  "LGXEN0 (Leonidas P.)"
 	],
 	"contact": {
-		"homepage": "https://github.com/TravikSkoot",
-		"sources": "https://github.com/TravikSkoot/magic-conch-fabric",
-		"issues": "https://github.com/TravikSkoot/magic-conch-fabric/issues"
+		"homepage": "https://modrinth.com/mod/magic-conch-shell",
+		"sources": "https://github.com/TravikSkoot/magic-conch-shell-fabric",
+		"issues": "https://github.com/TravikSkoot/magic-conch-shell-fabric/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/magic-conch-shell/icon.png",

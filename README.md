@@ -11,10 +11,10 @@ Magic Conch Shell (Fabric) is a lightweight Minecraft mod that adds a playful or
 - Hold or interact with the Magic Conch Shell and right‑click to receive a randomly selected answer.
 
 ## License
-MIT License. See the [LICENSE](https://github.com/TravikSkoot/magic-conch-fabric/blob/master/LICENSE) for details.
+MIT License. See the [LICENSE](https://github.com/TravikSkoot/magic-conch-shell-fabric/blob/master/LICENSE) for details.
 
 ## Links
-- Source code and project home on [GitHub](https://github.com/TravikSkoot/magic-conch-fabric).
+- Source code and project home on [GitHub](https://github.com/TravikSkoot/magic-conch-shell-fabric).
 
 ## Credits
 Thanks to Leonidas P. for the textures!
