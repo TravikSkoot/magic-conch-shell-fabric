@@ -1,6 +1,14 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "magic-conch-shell:item/worlds_smallest_violin"
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "magic-conch-shell:item/worlds_smallest_violin"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "magic-conch-shell:item/worlds_smallest_violin_playing"
+    },
+    "property": "minecraft:using_item"
   }
 }

@@ -32,5 +32,6 @@
   "message.magic-conch-shell.response.9": "Ask next time.",
   "modmenu.descriptionTranslation.magic-conch-shell": "A magical conch shell that gives random answers to your questions",
   "modmenu.nameTranslation.magic-conch-shell": "Magic Conch Shell",
+  "sound.magic-conch-shell.magic_conch_shell_sound": "Magic Conch Shell chimes",
   "sound.magic-conch-shell.worlds_smallest_violin": "World's Smallest Violin plays"
 }

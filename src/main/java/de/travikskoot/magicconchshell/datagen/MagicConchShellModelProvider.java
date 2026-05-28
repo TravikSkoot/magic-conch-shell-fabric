@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ItemModelUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
 
 public class MagicConchShellModelProvider extends FabricModelProvider {
@@ -24,7 +25,12 @@ public class MagicConchShellModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(MagicConchShellItems.KRABBY_PATTY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(MagicConchShellItems.NASTY_PATTY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(MagicConchShellItems.SECRET_FORMULA, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(MagicConchShellItems.SPATULA, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(MagicConchShellItems.WORLDS_SMALLEST_VIOLIN, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(MagicConchShellItems.SPATULA, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateBooleanDispatch(
+                MagicConchShellItems.WORLDS_SMALLEST_VIOLIN,
+                ItemModelUtils.isUsingItem(),
+                ItemModelUtils.plainModel(itemModelGenerators.createFlatItemModel(MagicConchShellItems.WORLDS_SMALLEST_VIOLIN, "_playing", ModelTemplates.FLAT_ITEM)),
+                ItemModelUtils.plainModel(itemModelGenerators.createFlatItemModel(MagicConchShellItems.WORLDS_SMALLEST_VIOLIN, ModelTemplates.FLAT_ITEM))
+        );
     }
 }

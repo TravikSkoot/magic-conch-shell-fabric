@@ -47,5 +47,6 @@ public class MagicConchShellEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("modmenu.descriptionTranslation.magic-conch-shell", "A magical conch shell that gives random answers to your questions");
         translationBuilder.add("modmenu.nameTranslation.magic-conch-shell", "Magic Conch Shell");
         translationBuilder.add("sound.magic-conch-shell.worlds_smallest_violin", "World's Smallest Violin plays");
+        translationBuilder.add("sound.magic-conch-shell.magic_conch_shell_sound", "Magic Conch Shell chimes");
     }
 }

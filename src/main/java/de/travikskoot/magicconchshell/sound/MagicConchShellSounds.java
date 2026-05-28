@@ -11,6 +11,7 @@ public class MagicConchShellSounds {
         MagicConchShell.LOGGER.info("Registering Sounds for " + MagicConchShell.MOD_NAME);
     }
     public static final SoundEvent WORLDS_SMALLEST_VIOLIN = registerSound("worlds_smallest_violin");
+    public static final SoundEvent MAGIC_CONCH_SHELL_SOUND = registerSound("magic_conch_shell_sound");
 
     private static SoundEvent registerSound(String id) {
         Identifier identifier = Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, id);

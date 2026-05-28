@@ -4,5 +4,14 @@
 	"sounds": [
 	  "magic-conch-shell:worlds_smallest_violin"
 	]
+  },
+  "magic_conch_shell_sound": {
+	"subtitle": "sound.magic-conch-shell.magic_conch_shell_sound",
+	"sounds": [
+      "magic-conch-shell:magic_conch_shell_sound_1",
+	  "magic-conch-shell:magic_conch_shell_sound_2",
+	  "magic-conch-shell:magic_conch_shell_sound_3",
+	  "magic-conch-shell:magic_conch_shell_sound_4"
+    ]
   }
 }

@@ -17,5 +17,7 @@ public class MagicConchShellDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(MagicConchShellPirateSpeakLangProvider::new);
 
 		pack.addProvider(MagicConchShellModelProvider::new);
+
+		pack.addProvider(MagicConchShellRecipeProvider::new);
 	}
 }

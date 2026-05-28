@@ -3,6 +3,7 @@ package de.travikskoot.magicconchshell;
 import de.travikskoot.magicconchshell.creativemodetab.MagicConchShellCreativeModeTab;
 import de.travikskoot.magicconchshell.item.MagicConchShellItems;
 import de.travikskoot.magicconchshell.sound.MagicConchShellSounds;
+import de.travikskoot.magicconchshell.util.MagicConchShellLootTableProvider;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -22,5 +23,6 @@ public class MagicConchShell implements ModInitializer {
 		MagicConchShellItems.registerMagicConchShellItems();
 		MagicConchShellCreativeModeTab.registerMagicConchShellCreativeModeTab();
 		MagicConchShellSounds.registerSounds();
+		MagicConchShellLootTableProvider.registerLootTables();
 	}
 }
