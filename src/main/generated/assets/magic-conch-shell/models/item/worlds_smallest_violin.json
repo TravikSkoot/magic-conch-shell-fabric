@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "magic-conch-shell:item/worlds_smallest_violin_parent",
   "textures": {
     "layer0": "magic-conch-shell:item/worlds_smallest_violin"
   }
