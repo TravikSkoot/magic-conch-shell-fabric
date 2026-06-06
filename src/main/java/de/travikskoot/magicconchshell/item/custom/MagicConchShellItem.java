@@ -1,13 +1,16 @@
 package de.travikskoot.magicconchshell.item.custom;
 
+import de.travikskoot.magicconchshell.data.MagicConchShellDataComponents;
 import de.travikskoot.magicconchshell.sound.MagicConchShellSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -16,6 +19,8 @@ import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.level.Level;
 
 import java.util.Random;
+
+import static de.travikskoot.magicconchshell.MagicConchShell.shouldUsePrideTextures;
 
 public class MagicConchShellItem extends Item {
 
@@ -29,7 +34,22 @@ public class MagicConchShellItem extends Item {
     }
 
     @Override
+    public void inventoryTick(ItemStack itemStack, ServerLevel level, Entity owner, EquipmentSlot slot) {
+        if (shouldUsePrideTextures()) {
+            itemStack.set(MagicConchShellDataComponents.PRIDE_ENABLED, true);
+        } else {
+            itemStack.remove(MagicConchShellDataComponents.PRIDE_ENABLED);
+        }
+    }
+
+    @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
+        ItemStack stack = player.getItemInHand(hand);
+
+        if (!level.isClientSide()) {
+            updatePrideComponent(stack);
+        }
+
         player.startUsingItem(hand);
         return InteractionResult.SUCCESS;
     }
@@ -50,6 +70,8 @@ public class MagicConchShellItem extends Item {
             return;
         }
 
+        updatePrideComponent(stack);
+
         Component questionText = Component.translatable("message.magic-conch-shell.magic-conch-shell_says")
                 .withStyle(ChatFormatting.LIGHT_PURPLE);
 
@@ -67,6 +89,8 @@ public class MagicConchShellItem extends Item {
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
         if (!level.isClientSide() && livingEntity instanceof Player player) {
+            updatePrideComponent(stack);
+
             int answerIndex = RANDOM.nextInt(TOTAL_ANSWERS);
 
             Component questionText = Component.translatable("message.magic-conch-shell.magic-conch-shell_says")
@@ -93,10 +117,19 @@ public class MagicConchShellItem extends Item {
                     1.0f
             );
 
-            player.awardStat(Stats.ITEM_USED.get(this));
+            stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
 
+            player.awardStat(Stats.ITEM_USED.get(this));
         }
 
         return stack;
+    }
+
+    private static void updatePrideComponent(ItemStack stack) {
+        if (shouldUsePrideTextures()) {
+            stack.set(MagicConchShellDataComponents.PRIDE_ENABLED, true);
+        } else {
+            stack.remove(MagicConchShellDataComponents.PRIDE_ENABLED);
+        }
     }
 }

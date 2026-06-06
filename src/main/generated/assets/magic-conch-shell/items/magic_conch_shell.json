@@ -1,6 +1,16 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "magic-conch-shell:item/magic_conch_shell"
+    "type": "minecraft:condition",
+    "component": "magic-conch-shell:pride_enabled",
+    "ignore_default": true,
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "magic-conch-shell:item/magic_conch_shell"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "magic-conch-shell:item/magic_conch_shell_pride"
+    },
+    "property": "minecraft:has_component"
   }
 }

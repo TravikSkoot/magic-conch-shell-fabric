@@ -3,7 +3,7 @@
 	"package": "de.travikskoot.magicconchshell.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+	  "MagicConchShellSplashManagerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
