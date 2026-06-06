@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
-  "group": "magic_conch_shell",
   "key": {
     "B": "minecraft:iron_bars",
     "I": "minecraft:stick"
