@@ -1,6 +1,9 @@
 package de.travikskoot.magicconchshell;
 
-import de.travikskoot.magicconchshell.datagen.*;
+import de.travikskoot.magicconchshell.datagen.MagicConchShellAdvancementProvider;
+import de.travikskoot.magicconchshell.datagen.MagicConchShellModelProvider;
+import de.travikskoot.magicconchshell.datagen.MagicConchShellRecipeProvider;
+import de.travikskoot.magicconchshell.datagen.MagicConchShellTagProvider;
 import de.travikskoot.magicconchshell.datagen.lang.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -19,5 +22,7 @@ public class MagicConchShellDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(MagicConchShellModelProvider::new);
 
 		pack.addProvider(MagicConchShellRecipeProvider::new);
+
+		pack.addProvider(MagicConchShellAdvancementProvider::new);
 	}
 }

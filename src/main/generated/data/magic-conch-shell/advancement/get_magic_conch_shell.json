@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "got_magic_conch_shell": {
+      "conditions": {
+        "items": [
+          {
+            "items": "magic-conch-shell:magic_conch_shell"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:gui/advancements/backgrounds/adventure",
+    "description": {
+      "translate": "advancements.magic-conch-shell.root.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "id": "magic-conch-shell:magic_conch_shell"
+    },
+    "title": {
+      "translate": "advancements.magic-conch-shell.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_magic_conch_shell"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

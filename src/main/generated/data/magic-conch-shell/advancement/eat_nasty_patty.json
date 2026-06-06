@@ -1,0 +1,30 @@
+{
+  "parent": "magic-conch-shell:eat_krabby_patty",
+  "criteria": {
+    "ate_nasty_patty": {
+      "conditions": {
+        "item": {
+          "items": "magic-conch-shell:nasty_patty"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.magic-conch-shell.eat_nasty_patty.description"
+    },
+    "icon": {
+      "id": "magic-conch-shell:nasty_patty"
+    },
+    "title": {
+      "translate": "advancements.magic-conch-shell.eat_nasty_patty.title"
+    }
+  },
+  "requirements": [
+    [
+      "ate_nasty_patty"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

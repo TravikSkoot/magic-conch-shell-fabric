@@ -1,0 +1,32 @@
+{
+  "parent": "magic-conch-shell:get_magic_conch_shell",
+  "criteria": {
+    "got_worlds_smallest_violin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "magic-conch-shell:worlds_smallest_violin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.magic-conch-shell.get_worlds_smallest_violin.description"
+    },
+    "icon": {
+      "id": "magic-conch-shell:worlds_smallest_violin"
+    },
+    "title": {
+      "translate": "advancements.magic-conch-shell.get_worlds_smallest_violin.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_worlds_smallest_violin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

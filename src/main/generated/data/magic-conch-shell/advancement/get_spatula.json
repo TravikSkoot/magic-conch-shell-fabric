@@ -1,0 +1,32 @@
+{
+  "parent": "magic-conch-shell:get_magic_conch_shell",
+  "criteria": {
+    "got_spatula": {
+      "conditions": {
+        "items": [
+          {
+            "items": "magic-conch-shell:spatula"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.magic-conch-shell.get_spatula.description"
+    },
+    "icon": {
+      "id": "magic-conch-shell:spatula"
+    },
+    "title": {
+      "translate": "advancements.magic-conch-shell.get_spatula.title"
+    }
+  },
+  "requirements": [
+    [
+      "got_spatula"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "magic-conch-shell:get_secret_formula",
+  "criteria": {
+    "ate_krabby_patty": {
+      "conditions": {
+        "item": {
+          "items": "magic-conch-shell:krabby_patty"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.magic-conch-shell.eat_krabby_patty.description"
+    },
+    "icon": {
+      "id": "magic-conch-shell:krabby_patty"
+    },
+    "title": {
+      "translate": "advancements.magic-conch-shell.eat_krabby_patty.title"
+    }
+  },
+  "requirements": [
+    [
+      "ate_krabby_patty"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
