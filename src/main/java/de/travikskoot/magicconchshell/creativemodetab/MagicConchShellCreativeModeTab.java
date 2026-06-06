@@ -12,6 +12,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 public class MagicConchShellCreativeModeTab {
 
@@ -35,18 +36,20 @@ public class MagicConchShellCreativeModeTab {
     public static void registerMagicConchShellCreativeModeTab() {
         MagicConchShell.LOGGER.info("Registering Item Group for " + MagicConchShell.MOD_NAME);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
-            output.accept(MagicConchShellItems.SECRET_FORMULA);
-            output.accept(MagicConchShellItems.KRABBY_PATTY);
-            output.accept(MagicConchShellItems.NASTY_PATTY);
-        });
-
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {
-            output.accept(MagicConchShellItems.MAGIC_CONCH_SHELL);
-            output.accept(MagicConchShellItems.SPATULA);
-            output.accept(MagicConchShellItems.WORLDS_SMALLEST_VIOLIN);
+            output.insertAfter(Items.ELYTRA, createMagicConchShellStack());
+            output.insertBefore(Items.GOAT_HORN, MagicConchShellItems.WORLDS_SMALLEST_VIOLIN);
         });
 
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
+            output.insertAfter(Items.PUFFERFISH, MagicConchShellItems.NASTY_PATTY);
+            output.insertAfter(MagicConchShellItems.NASTY_PATTY, MagicConchShellItems.KRABBY_PATTY);
+            output.insertBefore(Items.HONEY_BOTTLE,MagicConchShellItems.SECRET_FORMULA);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
+            output.insertBefore(Items.MACE, MagicConchShellItems.SPATULA);
+        });
     }
 
     private static ItemStack createMagicConchShellStack() {
