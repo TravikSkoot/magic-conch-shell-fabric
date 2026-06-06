@@ -13,27 +13,48 @@ public class MagicConchShellKoelschLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add("item.magic-conch-shell.krabby_patty", "Krabbe-Boorjer");
-        translationBuilder.add("item.magic-conch-shell.magic_conch_shell", "Magisch Miesmüschel");
-        translationBuilder.add("item.magic-conch-shell.nasty_patty", "Fiese Boorjer");
-        translationBuilder.add("item.magic-conch-shell.secret_formula", "Krabbe-Boorjer-Rezept");
-        translationBuilder.add("item.magic-conch-shell.spatula", "Schpatula");
-        translationBuilder.add("item.magic-conch-shell.worlds_smallest_violin", "Kleinst Fidel vun d’r Welt");
-        translationBuilder.add("itemGroup.magic-conch-shell.magic_conch_shell", "Magisch Miesmüschel");
-        translationBuilder.add("message.magic-conch-shell.magic-conch-shell_says", "D’r Müschel säät,");
-        translationBuilder.add("message.magic-conch-shell.response.0", "Vielleisch eines Daachs.");
-        translationBuilder.add("message.magic-conch-shell.response.1", "Jarnix.");
-        translationBuilder.add("message.magic-conch-shell.response.2", "Keins vun beid.");
-        translationBuilder.add("message.magic-conch-shell.response.3", "Ich glööv dat nit.");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Ess ene Krabbe Boorjer");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Lecker");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Ess ene Killerboorjer");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.title", "Dat rüch noh däm Gesundheitsinschpektor");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Kreech de Krabbe Boorjer Jeheemformel");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Streng jeheem");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Kreech ene Pfannewender");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "Spatulastisch");
+        translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.description", "Kreech de kleenste Violine vun de Welt");
+        translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.title", "Is Mayonnaise och en Instrument?");
+        translationBuilder.add("advancements.magic-conch-shell.root.description", "Frooch mich irjendwat!");
+        translationBuilder.add("advancements.magic-conch-shell.root.title", "De majische Miesmuschel");
+        translationBuilder.add("config.magic-conch-shell.category.general", "Alljemein");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Pride Features akteviere");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "Wenn 'Jo', donn Pride Features akteviert");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_splashes", "Pride Splash Texte akteviere");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_splashes.tooltip", "Wenn 'Jo', donn Pride Splash Texte op dä Hauptbildschirm akteviert");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_textures", "Pride Texturen akteviere");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_textures.tooltip", "Wenn 'Jo', donn Pride Texturen akteviert");
+        translationBuilder.add("config.magic-conch-shell.title", "Magische Miesmuschel Konfijuration");
+        translationBuilder.add("item.magic-conch-shell.krabby_patty", "Krabbe Boorjer");
+        translationBuilder.add("item.magic-conch-shell.magic_conch_shell", "Majische Miesmuschel");
+        translationBuilder.add("item.magic-conch-shell.nasty_patty", "Killerboorjer");
+        translationBuilder.add("item.magic-conch-shell.secret_formula", "Krabbe Boorjer Jeheemformel");
+        translationBuilder.add("item.magic-conch-shell.spatula", "Bratewänder");
+        translationBuilder.add("item.magic-conch-shell.worlds_smallest_violin", "De kleenste Violine vun de Welt");
+        translationBuilder.add("itemGroup.magic-conch-shell.magic_conch_shell", "Majische Miesmuschel");
+        translationBuilder.add("message.magic-conch-shell.magic-conch-shell_says", "De majische Miesmuschel säät:");
+        translationBuilder.add("message.magic-conch-shell.response.0", "Irjendwann verleech!");
+        translationBuilder.add("message.magic-conch-shell.response.1", "Jar nix.");
+        translationBuilder.add("message.magic-conch-shell.response.2", "Keins vun beide.");
+        translationBuilder.add("message.magic-conch-shell.response.3", "Ich jläuv ehr nit.");
         translationBuilder.add("message.magic-conch-shell.response.4", "Nä.");
-        translationBuilder.add("message.magic-conch-shell.response.5", "Joh.");
-        translationBuilder.add("message.magic-conch-shell.response.6", "Frooch noch ens noh.");
-        translationBuilder.add("message.magic-conch-shell.response.7", "Do küss nit noh bovve, wenn de nur hucks.");
-        translationBuilder.add("message.magic-conch-shell.response.8", "Ich sinn en neue Sooss en ding Zokunf.");
+        translationBuilder.add("message.magic-conch-shell.response.5", "Jo.");
+        translationBuilder.add("message.magic-conch-shell.response.6", "Frooch doch einfach noch ens!");
+        translationBuilder.add("message.magic-conch-shell.response.7", "Mer kann nit noh bovve kumme, wenn mer op singem unne sitzt.");
+        translationBuilder.add("message.magic-conch-shell.response.8", "Ich sinn ene neue Soß en dingem Zokunft.");
         translationBuilder.add("message.magic-conch-shell.response.9", "Frooch beim nächste Mol.");
-        translationBuilder.add("message.magic-conch-shell.response.10", "Follich dem Seepäädche.");
-        translationBuilder.add("modmenu.descriptionTranslation.magic-conch-shell", "En magisch Miesmüschel, diir jöck zesammejewööfelde Antwoote op ding Froore jitt.");
-        translationBuilder.add("modmenu.nameTranslation.magic-conch-shell", "Magisch Miesmüschel");
-        translationBuilder.add("sound.magic-conch-shell.worlds_smallest_violin", "Kleinst Fidel vun d’r Welt spillt");
+        translationBuilder.add("message.magic-conch-shell.response.10", "Folch däm Seepäerdche.");
+        translationBuilder.add("modmenu.descriptionTranslation.magic-conch-shell", "En majische Miesmuschel, die zufällije Antworte op ding Frooche jitt");
+        translationBuilder.add("modmenu.nameTranslation.magic-conch-shell", "Majische Miesmuschel");
+        translationBuilder.add("sound.magic-conch-shell.magic_conch_shell_sound", "De majische Miesmuschel klingt");
+        translationBuilder.add("sound.magic-conch-shell.worlds_smallest_violin", "De kleenste Violine vun de Welt spillt");
     }
 }

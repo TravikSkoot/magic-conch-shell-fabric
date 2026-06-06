@@ -13,27 +13,49 @@ public class MagicConchShellPirateSpeakLangProvider extends FabricLanguageProvid
 
     @Override
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Devour a Krabby Patty, matey!");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Scrumptious Grub");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Down a Foul Patty if ye dare");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.title", "Smells like the Navy Inspector");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Plunder the Hidden Formula");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Top Secret Booty");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Seize a Galley Spatula");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "Spatulastic, Me Hearties!");
+        translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.description", "Pillage the World's Smallest Fiddle");
+        translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.title", "Be mayonnaise an instrument of the sea?");
+        translationBuilder.add("advancements.magic-conch-shell.root.description", "Demand answers from the deep!");
+        translationBuilder.add("advancements.magic-conch-shell.root.title", "The Magic Conch Shell");
+        translationBuilder.add("config.magic-conch-shell.category.general", "General Lore");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Fly the Pride Colors");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "If 'aye', the crew flies the pride colors");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_splashes", "Unfurl Pride Splashes");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_splashes.tooltip", "If 'aye', pride chants echo on the title screen");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_textures", "Hoist Pride Textures");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_textures.tooltip", "If 'aye', paints the ship in pride textures");
+        translationBuilder.add("config.magic-conch-shell.title", "Enchanted Conch Shell Logbook");
         translationBuilder.add("item.magic-conch-shell.krabby_patty", "Krabby Patty o’ the galley");
         translationBuilder.add("item.magic-conch-shell.magic_conch_shell", "Enchanted Conch Shell");
         translationBuilder.add("item.magic-conch-shell.nasty_patty", "Foul Patty");
         translationBuilder.add("item.magic-conch-shell.secret_formula", "Hidden Formula");
         translationBuilder.add("item.magic-conch-shell.spatula", "Galley Spatula");
-        translationBuilder.add("item.magic-conch-shell.worlds_smallest_violin", "World’s Tiniest Fiddle");
+        translationBuilder.add("item.magic-conch-shell.worlds_smallest_violin", "World's Smallest Fiddle");
         translationBuilder.add("itemGroup.magic-conch-shell.magic_conch_shell", "Enchanted Conch Shell");
-        translationBuilder.add("message.magic-conch-shell.magic-conch-shell_says", "The Enchanted Conch be sayin’,");
-        translationBuilder.add("message.magic-conch-shell.response.0", "Mayhap, one o’ these tides.");
+        translationBuilder.add("message.magic-conch-shell.magic-conch-shell_says", "The Enchanted Conch Shell bellows:");
+        translationBuilder.add("message.magic-conch-shell.response.0", "Maybe some other tide.");
         translationBuilder.add("message.magic-conch-shell.response.1", "Naught.");
         translationBuilder.add("message.magic-conch-shell.response.2", "Neither, ye scallywag.");
-        translationBuilder.add("message.magic-conch-shell.response.3", "I be doubtin’ it.");
+        translationBuilder.add("message.magic-conch-shell.response.3", "I reckon not.");
         translationBuilder.add("message.magic-conch-shell.response.4", "Nay.");
-        translationBuilder.add("message.magic-conch-shell.response.5", "Aye!");
-        translationBuilder.add("message.magic-conch-shell.response.6", "Ask again, matey.");
-        translationBuilder.add("message.magic-conch-shell.response.7", "Ye won’t reach the masthead by restin’ on yer aft.");
-        translationBuilder.add("message.magic-conch-shell.response.8", "I spy a new sauce in yer future.");
-        translationBuilder.add("message.magic-conch-shell.response.9", "Ask on the next watch.");
-        translationBuilder.add("message.magic-conch-shell.response.10", "Follow the sea-horse, arr.");
-        translationBuilder.add("modmenu.descriptionTranslation.magic-conch-shell", "A magical conch shell that gives random answers to yer questions");
+        translationBuilder.add("message.magic-conch-shell.response.5", "Aye.");
+        translationBuilder.add("message.magic-conch-shell.response.6", "Bellow yer question once more.");
+        translationBuilder.add("message.magic-conch-shell.response.7", "Ye cannot reach the crow's nest by sitting on yer bilge.");
+        translationBuilder.add("message.magic-conch-shell.response.8", "I spy a strange new grog in yer future.");
+        translationBuilder.add("message.magic-conch-shell.response.9", "Ask when the next ship sails.");
+        translationBuilder.add("message.magic-conch-shell.response.10", "Follow the seahorse, matey.");
+        translationBuilder.add("modmenu.descriptionTranslation.magic-conch-shell", "A mystical conch from the deep that bellows random answers to yer parley");
         translationBuilder.add("modmenu.nameTranslation.magic-conch-shell", "Enchanted Conch Shell");
-        translationBuilder.add("sound.magic-conch-shell.worlds_smallest_violin", "The tiniest fiddle be playin’");
+        translationBuilder.add("sound.magic-conch-shell.magic_conch_shell_sound", "Enchanted Conch Shell chimes");
+        translationBuilder.add("sound.magic-conch-shell.worlds_smallest_violin", "World's Smallest Fiddle weeps");
+
     }
 }
