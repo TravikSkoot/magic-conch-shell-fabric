@@ -24,6 +24,9 @@
 		],
 		"fabric-datagen": [
 			"de.travikskoot.magicconchshell.MagicConchShellDataGenerator"
+		],
+		"modmenu": [
+		  "de.travikskoot.magicconchshell.config.MagicConchShellModMenuIntegration"
 		]
 	},
 	"mixins": [
