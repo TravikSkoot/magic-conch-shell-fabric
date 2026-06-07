@@ -67,11 +67,6 @@ public class MagicConchShellLootTableProvider {
             BuiltInLootTables.FISHING_TREASURE
     );
 
-    public static void registerLootTables() {
-        MagicConchShell.LOGGER.info("Registering Loot Tables for " + MagicConchShell.MOD_NAME);
-        modifyLootTables();
-    }
-
     private static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (!source.isBuiltin()) {
@@ -137,5 +132,10 @@ public class MagicConchShellLootTableProvider {
                 );
             }
         });
+    }
+
+    public static void registerLootTables() {
+        MagicConchShell.LOGGER.info("Registering Loot Tables for " + MagicConchShell.MOD_NAME);
+        modifyLootTables();
     }
 }

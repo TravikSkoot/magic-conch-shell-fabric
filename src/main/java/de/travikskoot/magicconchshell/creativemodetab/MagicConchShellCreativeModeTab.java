@@ -33,6 +33,16 @@ public class MagicConchShellCreativeModeTab {
                     .build()
     );
 
+    private static ItemStack createMagicConchShellStack() {
+        ItemStack stack = new ItemStack(MagicConchShellItems.MAGIC_CONCH_SHELL);
+
+        if (MagicConchShell.shouldUsePrideTextures()) {
+            stack.set(MagicConchShellDataComponents.PRIDE_ENABLED, true);
+        }
+
+        return stack;
+    }
+
     public static void registerMagicConchShellCreativeModeTab() {
         MagicConchShell.LOGGER.info("Registering Item Group for " + MagicConchShell.MOD_NAME);
 
@@ -50,15 +60,5 @@ public class MagicConchShellCreativeModeTab {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
             output.insertBefore(Items.MACE, MagicConchShellItems.SPATULA);
         });
-    }
-
-    private static ItemStack createMagicConchShellStack() {
-        ItemStack stack = new ItemStack(MagicConchShellItems.MAGIC_CONCH_SHELL);
-
-        if (MagicConchShell.shouldUsePrideTextures()) {
-            stack.set(MagicConchShellDataComponents.PRIDE_ENABLED, true);
-        }
-
-        return stack;
     }
 }

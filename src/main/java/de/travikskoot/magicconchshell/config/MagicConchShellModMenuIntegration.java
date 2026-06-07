@@ -39,6 +39,7 @@ public class MagicConchShellModMenuIntegration implements ModMenuApi {
                     .setSaveConsumer(newValue -> MagicConchShell.CONFIG.enable_pride_splashes = newValue)
                     .build();
 
+            @SuppressWarnings("deprecation")
             BooleanListEntry prideFeaturesEntry = new BooleanListEntry(
                     Component.translatable("config.magic-conch-shell.enable_pride_features"),
                     MagicConchShell.CONFIG.enable_pride_features,
