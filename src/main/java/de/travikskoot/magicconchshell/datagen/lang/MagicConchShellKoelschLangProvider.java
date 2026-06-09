@@ -26,6 +26,7 @@ public class MagicConchShellKoelschLangProvider extends FabricLanguageProvider {
         translationBuilder.add("advancements.magic-conch-shell.root.description", "Frooch mich irjendwat!");
         translationBuilder.add("advancements.magic-conch-shell.root.title", "De majische Miesmuschel");
         translationBuilder.add("config.magic-conch-shell.category.general", "Alljemein");
+        translationBuilder.add("config.magic-conch-shell.config_language", "Konfisch Sprooch");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Pride Features akteviere");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "Wenn 'Jo', donn Pride Features akteviert");
         translationBuilder.add("config.magic-conch-shell.enable_pride_splashes", "Pride Splash Texte akteviere");

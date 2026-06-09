@@ -12,6 +12,7 @@
   "advancements.magic-conch-shell.root.description": "Frooch mich irjendwat!",
   "advancements.magic-conch-shell.root.title": "De majische Miesmuschel",
   "config.magic-conch-shell.category.general": "Alljemein",
+  "config.magic-conch-shell.config_language": "Konfisch Sprooch",
   "config.magic-conch-shell.enable_pride_features": "Pride Features akteviere",
   "config.magic-conch-shell.enable_pride_features.tooltip": "Wenn 'Jo', donn Pride Features akteviert",
   "config.magic-conch-shell.enable_pride_splashes": "Pride Splash Texte akteviere",

@@ -7,7 +7,6 @@ import de.travikskoot.magicconchshell.item.MagicConchShellItems;
 import de.travikskoot.magicconchshell.sound.MagicConchShellSounds;
 import de.travikskoot.magicconchshell.util.MagicConchShellLootTableProvider;
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

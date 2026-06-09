@@ -12,6 +12,7 @@
   "advancements.magic-conch-shell.root.description": "Demand answers from the deep!",
   "advancements.magic-conch-shell.root.title": "The Magic Conch Shell",
   "config.magic-conch-shell.category.general": "General Lore",
+  "config.magic-conch-shell.config_language": "Config Lingo",
   "config.magic-conch-shell.enable_pride_features": "Fly the Pride Colors",
   "config.magic-conch-shell.enable_pride_features.tooltip": "If 'aye', the crew flies the pride colors",
   "config.magic-conch-shell.enable_pride_splashes": "Unfurl Pride Splashes",

@@ -12,6 +12,7 @@
   "advancements.magic-conch-shell.root.description": "Ask me anything!",
   "advancements.magic-conch-shell.root.title": "The Magic Conch Shell",
   "config.magic-conch-shell.category.general": "General",
+  "config.magic-conch-shell.config_language": "Config Language",
   "config.magic-conch-shell.enable_pride_features": "Enable Pride Features",
   "config.magic-conch-shell.enable_pride_features.tooltip": "If 'yes', enables pride features",
   "config.magic-conch-shell.enable_pride_splashes": "Enable Pride Splashes",

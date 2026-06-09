@@ -12,6 +12,7 @@
   "advancements.magic-conch-shell.root.description": "Frag mich irgendwas!",
   "advancements.magic-conch-shell.root.title": "Die Magische Miesmuschel",
   "config.magic-conch-shell.category.general": "Allgemein",
+  "config.magic-conch-shell.config_language": "Konfig Sprache",
   "config.magic-conch-shell.enable_pride_features": "Aktiviere Pride-Features",
   "config.magic-conch-shell.enable_pride_features.tooltip": "Wenn 'Ja', werden Pride-Features aktiviert",
   "config.magic-conch-shell.enable_pride_splashes": "Aktiviere Pride-Splash-Texte",

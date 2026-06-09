@@ -26,6 +26,7 @@ public class MagicConchShellLOLCATLangProvider extends FabricLanguageProvider {
         translationBuilder.add("advancements.magic-conch-shell.root.description", "Ask me anythin!");
         translationBuilder.add("advancements.magic-conch-shell.root.title", "Teh Majik Conch Thingy");
         translationBuilder.add("config.magic-conch-shell.category.general", "General stuff");
+        translationBuilder.add("config.magic-conch-shell.config_language", "Config Cat Langyage");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Turn on Pride Feachurs");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "If 'yes', rainbow kittehs appear");
         translationBuilder.add("config.magic-conch-shell.enable_pride_splashes", "Turn on Pride Textz");

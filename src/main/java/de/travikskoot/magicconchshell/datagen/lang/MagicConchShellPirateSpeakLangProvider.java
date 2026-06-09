@@ -26,6 +26,7 @@ public class MagicConchShellPirateSpeakLangProvider extends FabricLanguageProvid
         translationBuilder.add("advancements.magic-conch-shell.root.description", "Demand answers from the deep!");
         translationBuilder.add("advancements.magic-conch-shell.root.title", "The Magic Conch Shell");
         translationBuilder.add("config.magic-conch-shell.category.general", "General Lore");
+        translationBuilder.add("config.magic-conch-shell.config_language", "Config Lingo");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Fly the Pride Colors");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "If 'aye', the crew flies the pride colors");
         translationBuilder.add("config.magic-conch-shell.enable_pride_splashes", "Unfurl Pride Splashes");

@@ -26,6 +26,7 @@ public class MagicConchShellGermanLangProvider extends FabricLanguageProvider {
         translationBuilder.add("advancements.magic-conch-shell.root.description", "Frag mich irgendwas!");
         translationBuilder.add("advancements.magic-conch-shell.root.title", "Die Magische Miesmuschel");
         translationBuilder.add("config.magic-conch-shell.category.general", "Allgemein");
+        translationBuilder.add("config.magic-conch-shell.config_language", "Konfig Sprache");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Aktiviere Pride-Features");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "Wenn 'Ja', werden Pride-Features aktiviert");
         translationBuilder.add("config.magic-conch-shell.enable_pride_splashes", "Aktiviere Pride-Splash-Texte");

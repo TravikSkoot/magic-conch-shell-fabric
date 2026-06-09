@@ -12,6 +12,7 @@
   "advancements.magic-conch-shell.root.description": "Ask me anythin!",
   "advancements.magic-conch-shell.root.title": "Teh Majik Conch Thingy",
   "config.magic-conch-shell.category.general": "General stuff",
+  "config.magic-conch-shell.config_language": "Config Cat Langyage",
   "config.magic-conch-shell.enable_pride_features": "Turn on Pride Feachurs",
   "config.magic-conch-shell.enable_pride_features.tooltip": "If 'yes', rainbow kittehs appear",
   "config.magic-conch-shell.enable_pride_splashes": "Turn on Pride Textz",
