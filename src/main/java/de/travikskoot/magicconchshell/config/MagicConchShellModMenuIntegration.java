@@ -70,4 +70,8 @@ public class MagicConchShellModMenuIntegration implements ModMenuApi {
             return builder.build();
         };
     }
+
+    public static void registerModMenuIntegration() {
+        MagicConchShell.LOGGER.info("Registering Mod Menu Integration for " + MagicConchShell.MOD_NAME);
+    }
 }

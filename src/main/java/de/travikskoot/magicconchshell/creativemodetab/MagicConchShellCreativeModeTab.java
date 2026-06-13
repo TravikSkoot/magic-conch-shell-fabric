@@ -43,9 +43,7 @@ public class MagicConchShellCreativeModeTab {
         return stack;
     }
 
-    public static void registerMagicConchShellCreativeModeTab() {
-        MagicConchShell.LOGGER.info("Registering Item Group for " + MagicConchShell.MOD_NAME);
-
+    public static void modifyCreativeModeTabs() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {
             output.insertAfter(Items.ELYTRA, createMagicConchShellStack());
             output.insertBefore(Items.GOAT_HORN, MagicConchShellItems.WORLDS_SMALLEST_VIOLIN);
@@ -60,5 +58,10 @@ public class MagicConchShellCreativeModeTab {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(output -> {
             output.insertBefore(Items.MACE, MagicConchShellItems.SPATULA);
         });
+    }
+
+    public static void registerMagicConchShellCreativeModeTab() {
+        MagicConchShell.LOGGER.info("Registering Item Group for " + MagicConchShell.MOD_NAME);
+        modifyCreativeModeTabs();
     }
 }

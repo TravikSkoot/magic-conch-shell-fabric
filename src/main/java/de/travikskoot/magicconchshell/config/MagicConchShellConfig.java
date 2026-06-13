@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
+import de.travikskoot.magicconchshell.MagicConchShell;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;
 
@@ -165,5 +166,9 @@ public class MagicConchShellConfig {
         return text
                 .replace("\\", "\\\\")
                 .replace("\"", "\\\"");
+    }
+
+    public static void registerConfig() {
+        MagicConchShell.LOGGER.info("Registering Config for " + MagicConchShell.MOD_NAME);
     }
 }
