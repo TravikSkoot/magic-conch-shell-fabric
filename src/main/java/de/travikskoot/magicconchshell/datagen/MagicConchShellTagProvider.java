@@ -15,22 +15,10 @@ public class MagicConchShellTagProvider extends FabricTagsProvider.ItemTagsProvi
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-        valueLookupBuilder(ItemTags.WEAPON_ENCHANTABLE)
+        valueLookupBuilder(ItemTags.SWORDS)
                 .add(MagicConchShellItems.SPATULA);
 
-        valueLookupBuilder(ItemTags.SHARP_WEAPON_ENCHANTABLE)
-                .add(MagicConchShellItems.SPATULA);
-
-        valueLookupBuilder(ItemTags.FIRE_ASPECT_ENCHANTABLE)
-                .add(MagicConchShellItems.SPATULA);
-
-        valueLookupBuilder(ItemTags.SWEEPING_ENCHANTABLE)
-                .add(MagicConchShellItems.SPATULA);
-
-        valueLookupBuilder(ItemTags.DURABILITY_ENCHANTABLE)
-                .add(MagicConchShellItems.SPATULA);
-
-        valueLookupBuilder(ItemTags.VANISHING_ENCHANTABLE)
-                .add(MagicConchShellItems.SPATULA);
+        valueLookupBuilder(ItemTags.WOLF_FOOD)
+                .add(MagicConchShellItems.KRABBY_PATTY, MagicConchShellItems.NASTY_PATTY);
     }
 }
