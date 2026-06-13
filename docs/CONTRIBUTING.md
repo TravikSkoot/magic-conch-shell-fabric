@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contributing to magic conch shell fabric.
+Thanks for your interest in contributing to Magic Conch Shell.
 
 This project welcomes bug reports, ideas, documentation improvements, code contributions, and general feedback. The goal is to keep the project friendly, understandable, and easy to maintain.
 
