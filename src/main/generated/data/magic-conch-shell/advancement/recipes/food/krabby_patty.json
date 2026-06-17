@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nasty_patty": {
+    "has_secret_formula": {
       "conditions": {
         "items": [
           {
-            "items": "magic-conch-shell:nasty_patty"
+            "items": "magic-conch-shell:secret_formula"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "magic-conch-shell:nasty_patty"
+        "recipe": "magic-conch-shell:krabby_patty"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nasty_patty"
+      "has_secret_formula"
     ]
   ],
   "rewards": {
     "recipes": [
-      "magic-conch-shell:nasty_patty"
+      "magic-conch-shell:krabby_patty"
     ]
   }
 }

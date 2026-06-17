@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "minecraft:stick",
+    "N": "minecraft:nautilus_shell",
+    "P": "#minecraft:planks",
+    "S": "minecraft:string"
+  },
+  "pattern": [
+    "I  ",
+    " SP",
+    " PN"
+  ],
+  "result": {
+    "id": "magic-conch-shell:worlds_smallest_violin"
+  }
+}

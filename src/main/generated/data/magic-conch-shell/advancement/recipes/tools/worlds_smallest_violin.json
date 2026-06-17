@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nasty_patty": {
+    "has_nautilus_shell": {
       "conditions": {
         "items": [
           {
-            "items": "magic-conch-shell:nasty_patty"
+            "items": "minecraft:nautilus_shell"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "magic-conch-shell:nasty_patty_from_campfire_cooking"
+        "recipe": "magic-conch-shell:worlds_smallest_violin"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nasty_patty"
+      "has_nautilus_shell"
     ]
   ],
   "rewards": {
     "recipes": [
-      "magic-conch-shell:nasty_patty_from_campfire_cooking"
+      "magic-conch-shell:worlds_smallest_violin"
     ]
   }
 }

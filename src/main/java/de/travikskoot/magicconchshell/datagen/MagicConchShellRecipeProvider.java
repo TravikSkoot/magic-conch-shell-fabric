@@ -1,6 +1,5 @@
 package de.travikskoot.magicconchshell.datagen;
 
-import de.travikskoot.magicconchshell.MagicConchShell;
 import de.travikskoot.magicconchshell.item.MagicConchShellItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -8,11 +7,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
-import net.minecraft.resources.Identifier;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.CookingBookCategory;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
@@ -40,12 +36,25 @@ public class MagicConchShellRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.NAUTILUS_SHELL), has(Items.NAUTILUS_SHELL))
                         .save(output);
 
+                // World's Smallest Violin
+                shaped(
+                        RecipeCategory.TOOLS, MagicConchShellItems.WORLDS_SMALLEST_VIOLIN, 1)
+                        .pattern("I  ")
+                        .pattern(" SP")
+                        .pattern(" PN")
+                        .define('I', Items.STICK)
+                        .define('N', Items.NAUTILUS_SHELL)
+                        .define('P', ItemTags.PLANKS)
+                        .define('S', Items.STRING)
+                        .unlockedBy(getHasName(Items.NAUTILUS_SHELL), has(Items.NAUTILUS_SHELL))
+                        .save(output);
+
                 // Secret Formular
                 shapeless(
                         RecipeCategory.FOOD, MagicConchShellItems.SECRET_FORMULA, 1)
                         .requires(Items.GLASS_BOTTLE)
-                        .requires(Items.WRITABLE_BOOK)
-                        .unlockedBy(getHasName(Items.WRITABLE_BOOK), has(Items.WRITABLE_BOOK))
+                        .requires(Items.PAPER)
+                        .unlockedBy(getHasName(Items.KELP), has(Items.KELP))
                         .save(output);
 
                 // Spatula
@@ -59,39 +68,13 @@ public class MagicConchShellRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.IRON_BARS), has(Blocks.IRON_BARS))
                         .save(output);
 
-                // Krabby Patty from Smoking
-                SimpleCookingRecipeBuilder.smoking(
-                                Ingredient.of(MagicConchShellItems.NASTY_PATTY),
-                                RecipeCategory.FOOD,
-                                MagicConchShellItems.KRABBY_PATTY,
-                                0.35f,
-                                200
-                        )
-                        .unlockedBy(getHasName(MagicConchShellItems.NASTY_PATTY), has(MagicConchShellItems.NASTY_PATTY))
-                        .save(output, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "nasty_patty").toString());
-
-                // Krabby Patty from Smelting
-                SimpleCookingRecipeBuilder.smelting(
-                                Ingredient.of(MagicConchShellItems.NASTY_PATTY),
-                                RecipeCategory.FOOD,
-                                CookingBookCategory.FOOD,
-                                MagicConchShellItems.KRABBY_PATTY,
-                                0.35f,
-                                100
-                        )
-                        .unlockedBy(getHasName(MagicConchShellItems.NASTY_PATTY), has(MagicConchShellItems.NASTY_PATTY))
-                        .save(output, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "nasty_patty_from_smoking").toString());
-
-                // Krabby Patty from Campfire Cooking
-                SimpleCookingRecipeBuilder.campfireCooking(
-                                Ingredient.of(MagicConchShellItems.NASTY_PATTY),
-                                RecipeCategory.FOOD,
-                                MagicConchShellItems.KRABBY_PATTY,
-                                0.35f,
-                                600
-                        )
-                        .unlockedBy(getHasName(MagicConchShellItems.NASTY_PATTY), has(MagicConchShellItems.NASTY_PATTY))
-                        .save(output, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "nasty_patty_from_campfire_cooking").toString());
+                // Krabby Patty
+                shapeless(
+                        RecipeCategory.FOOD, MagicConchShellItems.KRABBY_PATTY, 1)
+                        .requires(MagicConchShellItems.NASTY_PATTY)
+                        .requires(MagicConchShellItems.SECRET_FORMULA)
+                        .unlockedBy(getHasName(MagicConchShellItems.SECRET_FORMULA), has(MagicConchShellItems.SECRET_FORMULA))
+                        .save(output);
             }
         };
     }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "magic-conch-shell:nasty_patty",
+    "magic-conch-shell:secret_formula"
+  ],
+  "result": {
+    "id": "magic-conch-shell:krabby_patty"
+  }
+}
