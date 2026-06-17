@@ -56,12 +56,11 @@ public class MagicConchShellItems {
             ));
     public static final Item SPATULA = registerItem("spatula",
             properties -> new Item(properties
-                    .rarity(Rarity.RARE)
                     .sword(ToolMaterial.IRON, 3.0F, -2.4F)
             ));
     public static final Item WORLDS_SMALLEST_VIOLIN = registerItem("worlds_smallest_violin",
             properties -> new MagicConchShellWorldsSmallestViolinItem(properties
-                    .rarity(Rarity.RARE)
+                    .rarity(Rarity.UNCOMMON)
                     .stacksTo(1)
             ));
     public static final Item SECRET_FORMULA = registerItem("secret_formula",
