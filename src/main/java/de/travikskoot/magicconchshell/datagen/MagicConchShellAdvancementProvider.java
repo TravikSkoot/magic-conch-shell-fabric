@@ -24,28 +24,28 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
 
     @Override
     public void generateAdvancement(HolderLookup.Provider registryLookup, Consumer<AdvancementHolder> consumer) {
-        AdvancementHolder getMagicConchShell = Advancement.Builder.advancement()
+        AdvancementHolder root = Advancement.Builder.advancement()
                 .display(
                         MagicConchShellItems.MAGIC_CONCH_SHELL,
                         Component.translatable("advancements.magic-conch-shell.root.title"),
                         Component.translatable("advancements.magic-conch-shell.root.description"),
-                        Identifier.withDefaultNamespace("gui/advancements/backgrounds/adventure"),
-                        AdvancementType.GOAL ,
-                        true,
+                        Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "gui/advancements/backgrounds/magic_conch_shell"),
+                        AdvancementType.TASK ,
+                        false,
                         false,
                         false
                 )
                 .addCriterion("got_magic_conch_shell", InventoryChangeTrigger.TriggerInstance.hasItems(MagicConchShellItems.MAGIC_CONCH_SHELL))
-                .save(consumer, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "get_magic_conch_shell"));
+                .save(consumer, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "root"));
 
         AdvancementHolder getSpatula = Advancement.Builder.advancement()
-                .parent(getMagicConchShell)
+                .parent(root)
                 .display(
                         MagicConchShellItems.SPATULA,
                         Component.translatable("advancements.magic-conch-shell.get_spatula.title"),
                         Component.translatable("advancements.magic-conch-shell.get_spatula.description"),
                         null,
-                        AdvancementType.TASK ,
+                        AdvancementType.TASK,
                         true,
                         true,
                         false
@@ -54,28 +54,28 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
                 .save(consumer, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "get_spatula"));
 
         AdvancementHolder getWorldsSmallestViolin = Advancement.Builder.advancement()
-                .parent(getMagicConchShell)
+                .parent(root)
                 .display(
                         MagicConchShellItems.WORLDS_SMALLEST_VIOLIN,
                         Component.translatable("advancements.magic-conch-shell.get_worlds_smallest_violin.title"),
                         Component.translatable("advancements.magic-conch-shell.get_worlds_smallest_violin.description"),
                         null,
-                        AdvancementType.TASK ,
+                        AdvancementType.GOAL,
                         true,
                         true,
-                        false
+                        true
                 )
                 .addCriterion("got_worlds_smallest_violin", InventoryChangeTrigger.TriggerInstance.hasItems(MagicConchShellItems.WORLDS_SMALLEST_VIOLIN))
                 .save(consumer, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "get_worlds_smallest_violin"));
 
         AdvancementHolder getSecretFormula = Advancement.Builder.advancement()
-                .parent(getSpatula)
+                .parent(root)
                 .display(
                         MagicConchShellItems.SECRET_FORMULA,
                         Component.translatable("advancements.magic-conch-shell.get_secret_formula.title"),
                         Component.translatable("advancements.magic-conch-shell.get_secret_formula.description"),
                         null,
-                        AdvancementType.GOAL ,
+                        AdvancementType.GOAL,
                         true,
                         true,
                         true
@@ -90,7 +90,7 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
                         Component.translatable("advancements.magic-conch-shell.eat_krabby_patty.title"),
                         Component.translatable("advancements.magic-conch-shell.eat_krabby_patty.description"),
                         null,
-                        AdvancementType.TASK ,
+                        AdvancementType.TASK,
                         true,
                         true,
                         false
@@ -99,13 +99,13 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
                 .save(consumer, Identifier.fromNamespaceAndPath(MagicConchShell.MOD_ID, "eat_krabby_patty"));
 
         AdvancementHolder eatNastyPatty = Advancement.Builder.advancement()
-                .parent(eatKrabbyPatty)
+                .parent(getSpatula)
                 .display(
                         MagicConchShellItems.NASTY_PATTY,
                         Component.translatable("advancements.magic-conch-shell.eat_nasty_patty.title"),
                         Component.translatable("advancements.magic-conch-shell.eat_nasty_patty.description"),
                         null,
-                        AdvancementType.TASK ,
+                        AdvancementType.TASK,
                         true,
                         true,
                         false

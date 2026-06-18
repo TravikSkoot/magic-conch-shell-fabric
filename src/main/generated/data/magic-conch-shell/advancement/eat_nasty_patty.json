@@ -1,5 +1,5 @@
 {
-  "parent": "magic-conch-shell:eat_krabby_patty",
+  "parent": "magic-conch-shell:get_spatula",
   "criteria": {
     "ate_nasty_patty": {
       "conditions": {

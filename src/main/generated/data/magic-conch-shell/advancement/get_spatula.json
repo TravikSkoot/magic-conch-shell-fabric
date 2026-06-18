@@ -1,5 +1,5 @@
 {
-  "parent": "magic-conch-shell:get_magic_conch_shell",
+  "parent": "magic-conch-shell:root",
   "criteria": {
     "got_spatula": {
       "conditions": {

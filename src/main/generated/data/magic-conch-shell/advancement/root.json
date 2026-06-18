@@ -13,14 +13,14 @@
   },
   "display": {
     "announce_to_chat": false,
-    "background": "minecraft:gui/advancements/backgrounds/adventure",
+    "background": "magic-conch-shell:gui/advancements/backgrounds/magic_conch_shell",
     "description": {
       "translate": "advancements.magic-conch-shell.root.description"
     },
-    "frame": "goal",
     "icon": {
       "id": "magic-conch-shell:magic_conch_shell"
     },
+    "show_toast": false,
     "title": {
       "translate": "advancements.magic-conch-shell.root.title"
     }
