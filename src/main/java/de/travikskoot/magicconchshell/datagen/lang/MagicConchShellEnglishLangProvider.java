@@ -13,17 +13,17 @@ public class MagicConchShellEnglishLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Eat a Krabby Patty");
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Tasty");
-        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Eat a Nasty Patty");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Taste your first Krabby Patty");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "You like Krabby Patties, don't you?");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Eat a Nasty Patty and hope for the best");
         translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.title", "Smells like the health inspector");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Obtain Secret Formula");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Top Secret");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Obtain a Spatula");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "Spatulastic");
-        translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.description", "Acquire World's Smallest Violin");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Acquire the Krabby Patty Secret Formula");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "For Manager's Eyes Only");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Get a spatula and start your fry cook career");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "I'm Ready, I'm Ready!");
+        translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.description", "Obtain the World's Smallest Violin");
         translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.title", "Is mayonnaise an instrument?");
-        translationBuilder.add("advancements.magic-conch-shell.root.description", "Ask me anything!");
+        translationBuilder.add("advancements.magic-conch-shell.root.description", "Find a mysterious shell that answers your questions");
         translationBuilder.add("advancements.magic-conch-shell.root.title", "The Magic Conch Shell");
         translationBuilder.add("config.magic-conch-shell.category.general", "General");
         translationBuilder.add("config.magic-conch-shell.config_language", "Config Language");

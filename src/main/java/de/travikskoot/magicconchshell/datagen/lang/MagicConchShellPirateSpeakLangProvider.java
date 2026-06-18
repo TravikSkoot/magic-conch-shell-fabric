@@ -13,18 +13,18 @@ public class MagicConchShellPirateSpeakLangProvider extends FabricLanguageProvid
 
     @Override
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Devour a Krabby Patty, matey!");
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Scrumptious Grub");
-        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Down a Foul Patty if ye dare");
-        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.title", "Smells like the Navy Inspector");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Plunder the Hidden Formula");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Top Secret Booty");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Seize a Galley Spatula");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "Spatulastic, Me Hearties!");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Take yer first bite o' a Krabby Patty, ye landlubber!");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Ye like Krabby Patties, don't ye?");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Scoff down a Foul Patty an' pray to Davy Jones it goes well");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.title", "Smells Like Davy Jones' Locker");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Plunder the hidden formula, arrr!");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Fer the Cap'n's Eyes Only");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Grab yer spatula an' set sail on yer fry cook voyage");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "I'm ready, I'm ready, arrr!");
         translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.description", "Pillage the World's Smallest Fiddle");
         translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.title", "Be mayonnaise an instrument of the sea?");
-        translationBuilder.add("advancements.magic-conch-shell.root.description", "Demand answers from the deep!");
-        translationBuilder.add("advancements.magic-conch-shell.root.title", "The Magic Conch Shell");
+        translationBuilder.add("advancements.magic-conch-shell.root.description", "Find a mysterious shell that answers yer questions from the deep");
+        translationBuilder.add("advancements.magic-conch-shell.root.title", "The Enchanted Conch Shell");
         translationBuilder.add("config.magic-conch-shell.category.general", "General Lore");
         translationBuilder.add("config.magic-conch-shell.config_language", "Config Lingo");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Fly the Pride Colors");

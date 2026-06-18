@@ -13,22 +13,22 @@ public class MagicConchShellLOLCATLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Nom a Krabby Patty");
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Nommy");
-        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Nom a Nasty Patty, oh noe");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Taest ur furst Krabby Patty, nom nom nom!");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "U liek Krabby Pattiez, dunt u?");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Eet teh Nastee Patty an hoep 4 teh best, oh noe");
         translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.title", "Smellz like health inspectr cat");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Can haz Secret Wecipe");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Top Secrit");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Can haz a Spatula");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "Spatulastik");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Obtain teh seekrit Krabby Patty wecipe, srsly");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "4 Manager Eyez Only, no cheezburgir 4 u");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Grab ur burgirflippr an start ur fry cook karriur, can has?");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "I iz ready, I iz ready!");
         translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.description", "Get Worldz Teeniest Violin for cryin");
         translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.title", "Iz mayonnaise instrument?");
-        translationBuilder.add("advancements.magic-conch-shell.root.description", "Ask me anythin!");
+        translationBuilder.add("advancements.magic-conch-shell.root.description", "Findz a misteerius shell dat answerz ur questions, kthx");
         translationBuilder.add("advancements.magic-conch-shell.root.title", "Teh Majik Conch Thingy");
         translationBuilder.add("config.magic-conch-shell.category.general", "General stuff");
         translationBuilder.add("config.magic-conch-shell.config_language", "Config Cat Langyage");
         translationBuilder.add("config.magic-conch-shell.enable_pride_features", "Turn on Pride Feachurs");
-        translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "If 'yes', rainbow kittehs appear");
+        translationBuilder.add("config.magic-conch-shell.enable_pride_features.tooltip", "If 'yes', enables pride featurez");
         translationBuilder.add("config.magic-conch-shell.enable_pride_splashes", "Turn on Pride Textz");
         translationBuilder.add("config.magic-conch-shell.enable_pride_splashes.tooltip", "If 'yes', rainbow wordz on screen");
         translationBuilder.add("config.magic-conch-shell.enable_pride_textures", "Turn on Pride Colors");
@@ -38,7 +38,7 @@ public class MagicConchShellLOLCATLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.magic-conch-shell.magic_conch_shell", "Teh Majik Conch Thingy");
         translationBuilder.add("item.magic-conch-shell.nasty_patty", "Nasty Patty eww");
         translationBuilder.add("item.magic-conch-shell.secret_formula", "Secrit Wecipe");
-        translationBuilder.add("item.magic-conch-shell.spatula", "Burgirflipper");
+        translationBuilder.add("item.magic-conch-shell.spatula", "Burgirflippr");
         translationBuilder.add("item.magic-conch-shell.worlds_smallest_violin", "Worldz Teeniest Violin");
         translationBuilder.add("itemGroup.magic-conch-shell.magic_conch_shell", "Teh Majik Conch Thingy");
         translationBuilder.add("message.magic-conch-shell.magic-conch-shell_says", "Teh Majik Conch Thingy sez:");

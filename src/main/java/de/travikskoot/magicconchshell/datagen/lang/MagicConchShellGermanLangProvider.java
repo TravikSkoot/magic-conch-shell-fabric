@@ -13,17 +13,17 @@ public class MagicConchShellGermanLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Iss einen Krabbenburger");
-        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Lecker");
-        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Iss einen Killerburger");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.description", "Koste deinen ersten Krabbenburger");
+        translationBuilder.add("advancements.magic-conch-shell.eat_krabby_patty.title", "Du stehst auf Krabbenburger, oder?");
+        translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.description", "Iss einen Killerburger und hoffe auf das Beste");
         translationBuilder.add("advancements.magic-conch-shell.eat_nasty_patty.title", "Das riecht nach dem Gesundheitsinspektor");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Erhalte die Krabbenburgergeheimformel");
-        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Streng Geheim");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Erhalte einen Pfannenwender");
-        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "Spatulastisch");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.description", "Erhalte die Krabbenburger-Geheimformel");
+        translationBuilder.add("advancements.magic-conch-shell.get_secret_formula.title", "Nur für Führungskräfte bestimmt");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.description", "Schnapp dir einen Pfannenwender und starte deine Burgerbrater‑Karriere");
+        translationBuilder.add("advancements.magic-conch-shell.get_spatula.title", "Ich bin bereit, ich bin bereit!");
         translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.description", "Erhalte die kleinste Violine der Welt");
         translationBuilder.add("advancements.magic-conch-shell.get_worlds_smallest_violin.title", "Ist Mayonnaise auch ein Instrument?");
-        translationBuilder.add("advancements.magic-conch-shell.root.description", "Frag mich irgendwas!");
+        translationBuilder.add("advancements.magic-conch-shell.root.description", "Finde eine geheimnisvolle Muschel, die deine Fragen beantwortet");
         translationBuilder.add("advancements.magic-conch-shell.root.title", "Die Magische Miesmuschel");
         translationBuilder.add("config.magic-conch-shell.category.general", "Allgemein");
         translationBuilder.add("config.magic-conch-shell.config_language", "Konfig Sprache");
