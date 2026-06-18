@@ -1,31 +1,141 @@
-# Magic Conch Shell
+<h1><img src="docs/images/magic_conch_shell_title.png" alt="Magic Conch Shell Title"/></h1>
 
-A small Fabric mod that adds the Magic Conch Shell to Minecraft.
+A SpongeBob inspired Fabric mod that adds the Magic Conch Shell and several themed items to Minecraft.
 
+## What this mod adds
 
-## Features
+Magic Conch Shell adds a small collection of SpongeBob inspired items, sounds, and gameplay features:
 
-### Core Gameplay
-- Ask the conch and receive a randomized response suitable for roleplay, challenges, or settling quick debates.
-- On use, the shell chooses a random answer from a predefined answer pool.
-- Answers are purely cosmetic and do not change vanilla balance or progression, making the mod safe for any type of world or modpack.
+- **Magic Conch Shell**  
+  Ask the shell a question and receive one of 11 random answers.  
+  The item has a short drumroll style use animation, plays a custom sound, and uses durability when activated.
 
-### How to obtain the Magic Conch Shell
-- Buried treasure chests always have a guaranteed Magic Conch Shell roll.
-- Fishing treasure loot has an additional chance to include the shell.
-- Underwater ruins (small and large) can contain the shell in their chest loot.
-- Shipwreck treasure chests can also roll the shell as bonus loot.
-- Nautilus mobs have a small, looting affected chance to drop the shell when killed by a player.
+- **Krabby Patty**  
+  A powerful food item that restores 10 hunger points and provides high saturation.
 
+- **Nasty Patty**  
+  A dangerous food item with poor nutrition that also applies poison, hunger, and nausea.
 
-## Usage
-- Hold right‑click to interact with the Magic Conch Shell and to receive a randomly selected answer.
+- **Spatula**  
+  A weapon based on an iron sword. It is also required to obtain Nasty Patties from undead enemies.
 
-## License
-MIT License. See the [LICENSE](https://github.com/TravikSkoot/magic-conch-shell-fabric/blob/master/LICENSE) for details.
+- **World's Smallest Violin**  
+  A fun utility item that plays its own custom sound effect when used.
 
-## Links
-Source code and project home on [GitHub](https://github.com/TravikSkoot/magic-conch-shell-fabric).
+- **Secret Formula**  
+   An ingredient item that can be used to craft a Krabby Patty.
 
-## Credits
-Thanks to Leonidas P. for making the textures!
+- **Custom advancements**  
+  A small set of themed advancements that track your progress with the Magic Conch Shell and its related items.
+
+- **Mod Menu config screen support**  
+  The mod includes a simple config that lets you toggle certain features, either via an in game config screen (when modmenu is installed) or through the config file.
+
+All items are integrated into survival gameplay through loot tables and crafting recipes.
+
+## Supported languages
+
+The mod currently includes support for:
+
+- English
+- German
+- Kölsch/Ripoarisch
+- Piratespeak
+- Lolcatz
+
+## Magic Conch Shell
+
+The Magic Conch Shell is the main item of this mod.
+
+It can be used to ask the shell a question. After a short drumroll moment, it displays one random answer directly on screen and plays a custom sound.
+
+### Where to find it
+
+You can get the Magic Conch Shell in several ways:
+
+- Guaranteed in **Buried Treasure**
+- Possible from **Shipwreck Treasure**
+- Possible from **Underwater Ruins**
+- Possible from **Fishing Treasure**
+- Possible from **Trail Ruins**
+- Small chance from killing a **Nautilus**
+
+<img src="docs/images/magic_conch_shell_use.gif" width="500"/>
+
+### Crafting recipe
+
+The Magic Conch Shell can also be crafted with 8 Nautilus Shells and 1 Amethyst Shard.
+
+<img src="docs/images/magic_conch_shell_recipe.png" width="500"/>
+
+## Items and progression
+
+### Spatula
+
+The Spatula is a sword like weapon and can be crafted with 2 Sticks and 1 Iron Bars.
+
+<img src="docs/images/spatula_recipe.png" width="500"/>
+
+### Secret Formula
+
+The Secret Formula is crafted using a shapeless recipe with a Glass Bottle and 1 Paper.
+
+<img src="docs/images/secret_formula_recipe.png" width="500"/>
+
+### Nasty Patty
+
+The Nasty Patty cannot be crafted directly. Instead, it drops from undead mobs when the player kills them using the Spatula.
+
+This includes multiple undead variants such as Zombies, Zombie Villagers, Drowned, Husks, Camel Husks, Zoglins, Zombie Horses, Zombie Nautiluses and Zombified Piglins.
+
+Effects of eating a Nasty Patty:
+
+- Poison II for 60 seconds
+- Hunger III for 15 seconds
+- Nausea for 15 seconds
+
+<img src="docs/images/nasty_patty.png" width="500"/>
+
+### Krabby Patty
+
+A Krabby Patty is made by combining a Nasty Patty with the Secret Formula.
+
+Food values:
+
+- 10 hunger
+- 1.0 saturation
+
+<img src="docs/images/krabby_patty_recipe.png" width="500"/>
+
+## World's Smallest Violin
+
+The World's Smallest Violin is a fun item that plays a custom sound effect when used.
+It uses a horn style animation and has a short cooldown before it can be used again.
+
+It can be crafted with a Stick, a String, 2 Planks and a Nautilus Shell.
+
+<img src="docs/images/worlds_smallest_violin_recipe.png" width="500"/>
+
+## Gallery
+
+<img src="docs/images/magic_conch_shell_brush.png" width="500"/>
+
+The Magic Conch Shell found in a trail ruin
+
+<img src="docs/images/magic_conch_shell.png" width="500"/>
+
+The Magic Conch Shell found in a buried treasure chest
+
+<img src="docs/images/magic_conch_shell_pride.png" width="500"/>
+
+The Magic Conch Shell with pride textures (can be disabled in the config screen/file)
+
+<img src="docs/images/magic_conch_shell_lolcatz.gif" width="500"/>
+
+Supports multiple languages (English, German, Kölsch/Ripoarisch, Piratespeak, Lolcatz)
+
+## Community
+
+- [Code of Conduct](docs/CODE_OF_CONDUCT.md)
+- [Contributing Guide](docs/CONTRIBUTING.md)
+- [Security Policy](docs/SECURITY.md)
