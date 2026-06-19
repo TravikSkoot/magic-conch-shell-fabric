@@ -4,7 +4,9 @@ import de.travikskoot.magicconchshell.item.MagicConchShellItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,10 +17,18 @@ public class MagicConchShellTagProvider extends FabricTagsProvider.ItemTagsProvi
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-        valueLookupBuilder(ItemTags.SWORDS)
-                .add(MagicConchShellItems.SPATULA);
+        builder(ItemTags.SWORDS)
+                .add(
+                        keyOf(MagicConchShellItems.SPATULA));
 
-        valueLookupBuilder(ItemTags.WOLF_FOOD)
-                .add(MagicConchShellItems.KRABBY_PATTY, MagicConchShellItems.NASTY_PATTY);
+        builder(ItemTags.WOLF_FOOD)
+                .add(
+                        keyOf(MagicConchShellItems.KRABBY_PATTY),
+                        keyOf(MagicConchShellItems.NASTY_PATTY)
+                );
+    }
+
+    private static net.minecraft.resources.ResourceKey<Item> keyOf(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).orElseThrow();
     }
 }
