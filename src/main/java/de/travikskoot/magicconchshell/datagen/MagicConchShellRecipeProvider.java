@@ -23,8 +23,6 @@ public class MagicConchShellRecipeProvider extends FabricRecipeProvider {
         return new RecipeProvider(registries, output) {
             @Override
             public void buildRecipes() {
-
-                // Magic Conch Shell
                 shaped(
                         RecipeCategory.COMBAT, MagicConchShellItems.MAGIC_CONCH_SHELL, 1)
                         .pattern("NNN")
@@ -35,8 +33,6 @@ public class MagicConchShellRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.AMETHYST_SHARD), has(Items.AMETHYST_SHARD))
                         .unlockedBy(getHasName(Items.NAUTILUS_SHELL), has(Items.NAUTILUS_SHELL))
                         .save(output);
-
-                // World's Smallest Violin
                 shaped(
                         RecipeCategory.TOOLS, MagicConchShellItems.WORLDS_SMALLEST_VIOLIN, 1)
                         .pattern("I  ")
@@ -48,16 +44,12 @@ public class MagicConchShellRecipeProvider extends FabricRecipeProvider {
                         .define('S', Items.STRING)
                         .unlockedBy(getHasName(Items.NAUTILUS_SHELL), has(Items.NAUTILUS_SHELL))
                         .save(output);
-
-                // Secret Formular
                 shapeless(
                         RecipeCategory.FOOD, MagicConchShellItems.SECRET_FORMULA, 1)
                         .requires(Items.GLASS_BOTTLE)
                         .requires(Items.PAPER)
-                        .unlockedBy(getHasName(Items.KELP), has(Items.KELP))
+                        .unlockedBy(getHasName(MagicConchShellItems.NASTY_PATTY), has(MagicConchShellItems.NASTY_PATTY))
                         .save(output);
-
-                // Spatula
                 shaped(
                         RecipeCategory.COMBAT, MagicConchShellItems.SPATULA, 1)
                         .pattern("  B")
@@ -67,8 +59,6 @@ public class MagicConchShellRecipeProvider extends FabricRecipeProvider {
                         .define('I', Items.STICK)
                         .unlockedBy(getHasName(Blocks.IRON_BARS), has(Blocks.IRON_BARS))
                         .save(output);
-
-                // Krabby Patty
                 shapeless(
                         RecipeCategory.FOOD, MagicConchShellItems.KRABBY_PATTY, 1)
                         .requires(MagicConchShellItems.NASTY_PATTY)
