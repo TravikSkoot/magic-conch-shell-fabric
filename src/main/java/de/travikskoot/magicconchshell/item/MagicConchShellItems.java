@@ -14,12 +14,11 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 
 import java.util.List;
 import java.util.function.Function;
-
-import static net.minecraft.world.item.component.Consumables.defaultFood;
 
 public class MagicConchShellItems {
 
@@ -44,11 +43,12 @@ public class MagicConchShellItems {
                             .saturationModifier(0.1F)
                             .build()),
 
-                            defaultFood()
-                            .onConsume(
-                                    new ApplyStatusEffectsConsumeEffect(
-                                            List.of(
-                                                    new MobEffectInstance(MobEffects.POISON, 1200, 1), new MobEffectInstance(MobEffects.HUNGER, 300, 2), new MobEffectInstance(MobEffects.NAUSEA, 300, 0)
+                            Consumables
+                                    .defaultFood()
+                                    .onConsume(
+                                            new ApplyStatusEffectsConsumeEffect(
+                                                    List.of(
+                                                            new MobEffectInstance(MobEffects.POISON, 1200, 1), new MobEffectInstance(MobEffects.HUNGER, 300, 2), new MobEffectInstance(MobEffects.NAUSEA, 300, 0)
                                             )
                                     )
                             )
