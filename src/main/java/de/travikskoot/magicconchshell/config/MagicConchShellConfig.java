@@ -33,7 +33,7 @@ public class MagicConchShellConfig {
 
     private static final String FALLBACK_LANGUAGE = "en_us";
 
-    public String config_language = "en_us";
+    public String config_language = FALLBACK_LANGUAGE;
     public boolean enable_pride_features = true;
     public boolean enable_pride_textures = true;
     public boolean enable_pride_splashes = true;
@@ -70,6 +70,14 @@ public class MagicConchShellConfig {
         config.config_language = normalizeConfigLanguage(config.config_language);
         config.save();
         return config;
+    }
+
+    public void setConfigLanguage(String language) {
+        this.config_language = normalizeConfigLanguage(language);
+    }
+
+    public void setConfigLanguageFromClient(String clientLanguage) {
+        this.config_language = normalizeClientLanguage(clientLanguage);
     }
 
     public void save() {
@@ -113,6 +121,20 @@ public class MagicConchShellConfig {
 
         String normalized = language.toLowerCase();
         return SUPPORTED_CONFIG_LANGUAGES.contains(normalized) ? normalized : FALLBACK_LANGUAGE;
+    }
+
+    private static String normalizeClientLanguage(String language) {
+        if (language == null || language.isBlank()) {
+            return FALLBACK_LANGUAGE;
+        }
+
+        String normalized = language.toLowerCase();
+
+        if (SUPPORTED_CONFIG_LANGUAGES.contains(normalized)) {
+            return normalized;
+        }
+
+        return FALLBACK_LANGUAGE;
     }
 
     private static Map<String, String> loadLang(String languageCode) {

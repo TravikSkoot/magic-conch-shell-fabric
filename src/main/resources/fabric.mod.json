@@ -22,6 +22,9 @@
 		"main": [
 			"de.travikskoot.magicconchshell.MagicConchShell"
 		],
+		"client": [
+		  "de.travikskoot.magicconchshell.MagicConchShellClient"
+		],
 		"fabric-datagen": [
 			"de.travikskoot.magicconchshell.MagicConchShellDataGenerator"
 		],
