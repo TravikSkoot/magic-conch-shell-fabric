@@ -33,7 +33,7 @@ public class MagicConchShellConfig {
 
     private static final String FALLBACK_LANGUAGE = "en_us";
 
-    public String config_language = "en_us";
+    public String config_language = FALLBACK_LANGUAGE;
     public boolean enable_pride_features = true;
     public boolean enable_pride_textures = true;
     public boolean enable_pride_splashes = true;
@@ -63,13 +63,17 @@ public class MagicConchShellConfig {
                     }
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                MagicConchShell.LOGGER.error("Failed to load config from {}", FILE.getAbsolutePath(), e);
             }
         }
 
         config.config_language = normalizeConfigLanguage(config.config_language);
         config.save();
         return config;
+    }
+
+    public void setConfigLanguageFromClient(String clientLanguage) {
+        this.config_language = normalizeClientLanguage(clientLanguage);
     }
 
     public void save() {
@@ -102,7 +106,7 @@ public class MagicConchShellConfig {
 
             writer.write("}\n");
         } catch (Exception e) {
-            e.printStackTrace();
+            MagicConchShell.LOGGER.error("Failed to save config to {}", FILE.getAbsolutePath(), e);
         }
     }
 
@@ -115,11 +119,26 @@ public class MagicConchShellConfig {
         return SUPPORTED_CONFIG_LANGUAGES.contains(normalized) ? normalized : FALLBACK_LANGUAGE;
     }
 
+    private static String normalizeClientLanguage(String language) {
+        if (language == null || language.isBlank()) {
+            return FALLBACK_LANGUAGE;
+        }
+
+        String normalized = language.toLowerCase();
+
+        if (SUPPORTED_CONFIG_LANGUAGES.contains(normalized)) {
+            return normalized;
+        }
+
+        return FALLBACK_LANGUAGE;
+    }
+
     private static Map<String, String> loadLang(String languageCode) {
         String path = "/assets/magic-conch-shell/lang/" + languageCode + ".json";
 
         try (InputStream stream = MagicConchShellConfig.class.getResourceAsStream(path)) {
             if (stream == null) {
+                MagicConchShell.LOGGER.warn("Language file {} not found, falling back to {}", path, FALLBACK_LANGUAGE);
                 return loadFallbackLang();
             }
 
@@ -128,7 +147,7 @@ public class MagicConchShellConfig {
                 return map != null ? map : Collections.emptyMap();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            MagicConchShell.LOGGER.error("Failed to load language file for {}", languageCode, e);
             return loadFallbackLang();
         }
     }
@@ -138,6 +157,7 @@ public class MagicConchShellConfig {
 
         try (InputStream stream = MagicConchShellConfig.class.getResourceAsStream(path)) {
             if (stream == null) {
+                MagicConchShell.LOGGER.error("Fallback language file {} not found", path);
                 return Collections.emptyMap();
             }
 
@@ -146,7 +166,7 @@ public class MagicConchShellConfig {
                 return map != null ? map : Collections.emptyMap();
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            MagicConchShell.LOGGER.error("Failed to load fallback language file {}", path, e);
             return Collections.emptyMap();
         }
     }
