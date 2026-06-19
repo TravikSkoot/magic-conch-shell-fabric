@@ -48,8 +48,4 @@ public class MagicConchShellCustomItemModelGenerator {
                 requiredTextureKey
         );
     }
-
-    public static void registerCustomItemModels() {
-        MagicConchShell.LOGGER.info("Registering Item Models for " + MagicConchShell.MOD_NAME);
-    }
 }
