@@ -35,12 +35,10 @@ public class MagicConchShell implements ModInitializer {
 		LOGGER.info("Initializing " + MOD_NAME + " " + MOD_VERSION + "!");
 
 		MagicConchShellConfig.registerConfig();
-		MagicConchShellModMenuIntegration.registerModMenuIntegration();
 		MagicConchShellCreativeModeTab.registerMagicConchShellCreativeModeTab();
 		MagicConchShellDataComponents.registerDataComponents();
 		MagicConchShellItems.registerMagicConchShellItems();
 		MagicConchShellSounds.registerSounds();
-		MagicConchShellCustomItemModelGenerator.registerCustomItemModels();
 		MagicConchShellLootTableProvider.registerLootTables();
 	}
 
