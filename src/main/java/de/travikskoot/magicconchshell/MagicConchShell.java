@@ -1,13 +1,10 @@
 package de.travikskoot.magicconchshell;
 
 import de.travikskoot.magicconchshell.config.MagicConchShellConfig;
-import de.travikskoot.magicconchshell.config.MagicConchShellModMenuIntegration;
 import de.travikskoot.magicconchshell.creativemodetab.MagicConchShellCreativeModeTab;
 import de.travikskoot.magicconchshell.data.MagicConchShellDataComponents;
 import de.travikskoot.magicconchshell.item.MagicConchShellItems;
-import de.travikskoot.magicconchshell.mixin.MagicConchShellSplashManagerMixin;
 import de.travikskoot.magicconchshell.sound.MagicConchShellSounds;
-import de.travikskoot.magicconchshell.util.MagicConchShellCustomItemModelGenerator;
 import de.travikskoot.magicconchshell.util.MagicConchShellLootTableProvider;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
