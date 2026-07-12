@@ -1,5 +1,9 @@
 package de.travikskoot.magicconchshell.util;
 
+/*
+Fabric API 0.154.3 for 26.3-snapshot-3 Changelog:
+	- Disabled loot api for now
+
 import de.travikskoot.magicconchshell.MagicConchShell;
 import de.travikskoot.magicconchshell.item.MagicConchShellItems;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
@@ -141,3 +145,4 @@ public class MagicConchShellLootTableProvider {
         modifyLootTables();
     }
 }
+ */
