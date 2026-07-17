@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "magic-conch-shell:magic_conch_shell"
+        "recipes": "magic-conch-shell:magic_conch_shell"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

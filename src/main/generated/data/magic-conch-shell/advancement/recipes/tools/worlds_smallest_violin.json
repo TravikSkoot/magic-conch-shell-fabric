@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "magic-conch-shell:worlds_smallest_violin"
+        "recipes": "magic-conch-shell:worlds_smallest_violin"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
