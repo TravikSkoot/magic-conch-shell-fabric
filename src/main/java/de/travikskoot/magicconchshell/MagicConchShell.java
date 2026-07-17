@@ -5,10 +5,8 @@ import de.travikskoot.magicconchshell.creativemodetab.MagicConchShellCreativeMod
 import de.travikskoot.magicconchshell.data.MagicConchShellDataComponents;
 import de.travikskoot.magicconchshell.item.MagicConchShellItems;
 import de.travikskoot.magicconchshell.sound.MagicConchShellSounds;
-/* Fabric API 0.154.3 for 26.3-snapshot-3 Changelog:
-	- Disabled loot api for now
-import de.travikskoot.magicconchshell.util.MagicConchShellLootTableProvider;
- */
+// TODO: Disabled loot generation due to Fabric API temporarily removing the Loot API.
+//  import de.travikskoot.magicconchshell.util.MagicConchShellLootTableProvider;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
@@ -39,7 +37,8 @@ public class MagicConchShell implements ModInitializer {
 		MagicConchShellDataComponents.registerDataComponents();
 		MagicConchShellItems.registerMagicConchShellItems();
 		MagicConchShellSounds.registerSounds();
-		// MagicConchShellLootTableProvider.registerLootTables();
+		// TODO: Disabled loot generation due to Fabric API temporarily removing the Loot API.
+		//  MagicConchShellLootTableProvider.registerLootTables();
 	}
 
 	public static boolean shouldUsePrideTextures() {
