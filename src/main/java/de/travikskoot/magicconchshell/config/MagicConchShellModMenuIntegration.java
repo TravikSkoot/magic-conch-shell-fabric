@@ -1,5 +1,6 @@
 package de.travikskoot.magicconchshell.config;
 
+/* TODO: Temporarily disabled due to NoSuchFieldError (InputConstants$Type KEYSYM missing in SDL3)
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 import de.travikskoot.magicconchshell.MagicConchShell;
@@ -71,3 +72,4 @@ public class MagicConchShellModMenuIntegration implements ModMenuApi {
         };
     }
 }
+ */

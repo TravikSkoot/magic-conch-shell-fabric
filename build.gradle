@@ -35,7 +35,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	implementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+	// TODO: Temporarily disabled due to NoSuchFieldError (InputConstants$Type KEYSYM missing in SDL3)
+	// implementation("com.terraformersmc:modmenu:${project.modmenu_version}")
 
 	implementation("me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_version}") {
 		exclude(group: "net.fabricmc.fabric-api")
