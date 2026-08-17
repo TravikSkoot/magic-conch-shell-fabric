@@ -25,7 +25,7 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
     @Override
     public void generateAdvancement(HolderLookup.Provider registryLookup, Consumer<AdvancementHolder> consumer) {
         AdvancementHolder root = Advancement.Builder.advancement()
-                .display(
+                .rootDisplay(
                         MagicConchShellItems.MAGIC_CONCH_SHELL,
                         Component.translatable("advancements.magic-conch-shell.root.title"),
                         Component.translatable("advancements.magic-conch-shell.root.description"),
@@ -40,7 +40,7 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
 
         AdvancementHolder getSpatula = Advancement.Builder.advancement()
                 .parent(root)
-                .display(
+                .rootDisplay(
                         MagicConchShellItems.SPATULA,
                         Component.translatable("advancements.magic-conch-shell.get_spatula.title"),
                         Component.translatable("advancements.magic-conch-shell.get_spatula.description"),
@@ -55,7 +55,7 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
 
         AdvancementHolder getWorldsSmallestViolin = Advancement.Builder.advancement()
                 .parent(root)
-                .display(
+                .rootDisplay(
                         MagicConchShellItems.WORLDS_SMALLEST_VIOLIN,
                         Component.translatable("advancements.magic-conch-shell.get_worlds_smallest_violin.title"),
                         Component.translatable("advancements.magic-conch-shell.get_worlds_smallest_violin.description"),
@@ -70,7 +70,7 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
 
         AdvancementHolder getSecretFormula = Advancement.Builder.advancement()
                 .parent(root)
-                .display(
+                .rootDisplay(
                         MagicConchShellItems.SECRET_FORMULA,
                         Component.translatable("advancements.magic-conch-shell.get_secret_formula.title"),
                         Component.translatable("advancements.magic-conch-shell.get_secret_formula.description"),
@@ -85,7 +85,7 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
 
         AdvancementHolder eatKrabbyPatty = Advancement.Builder.advancement()
                 .parent(getSecretFormula)
-                .display(
+                .rootDisplay(
                         MagicConchShellItems.KRABBY_PATTY,
                         Component.translatable("advancements.magic-conch-shell.eat_krabby_patty.title"),
                         Component.translatable("advancements.magic-conch-shell.eat_krabby_patty.description"),
@@ -100,7 +100,7 @@ public class MagicConchShellAdvancementProvider extends FabricAdvancementProvide
 
         AdvancementHolder eatNastyPatty = Advancement.Builder.advancement()
                 .parent(getSpatula)
-                .display(
+                .rootDisplay(
                         MagicConchShellItems.NASTY_PATTY,
                         Component.translatable("advancements.magic-conch-shell.eat_nasty_patty.title"),
                         Component.translatable("advancements.magic-conch-shell.eat_nasty_patty.description"),
