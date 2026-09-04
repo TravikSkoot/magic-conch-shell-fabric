@@ -1,9 +1,5 @@
 package de.travikskoot.magicconchshell.util;
 
-/*
-Fabric API 0.154.3 for 26.3-snapshot-3 Changelog:
-	- Disabled loot api for now
-
 import de.travikskoot.magicconchshell.MagicConchShell;
 import de.travikskoot.magicconchshell.item.MagicConchShellItems;
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
@@ -23,8 +19,8 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemEntityPropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithEnchantedBonusCondition;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
-import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraft.world.level.storage.loot.providers.number.floats.ContextFloatProviders;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
 import java.util.Set;
 
@@ -81,7 +77,7 @@ public class MagicConchShellLootTableProvider {
             if (key.equals(BuiltInLootTables.BURIED_TREASURE)) {
                 tableBuilder.withPool(
                         LootPool.lootPool()
-                                .setRolls(ConstantValue.exactly(1.0F))
+                                .setRolls(ContextIntProviders.exactly(1))
                                 .add(LootItem.lootTableItem(MagicConchShellItems.MAGIC_CONCH_SHELL))
                 );
             }
@@ -97,12 +93,12 @@ public class MagicConchShellLootTableProvider {
             if (key.equals(NAUTILUS)) {
                 tableBuilder.withPool(
                         LootPool.lootPool()
-                                .setRolls(ConstantValue.exactly(1.0F))
+                                .setRolls(ContextIntProviders.exactly(1))
                                 .add(LootItem.lootTableItem(MagicConchShellItems.MAGIC_CONCH_SHELL))
                                 .when(LootItemKilledByPlayerCondition.killedByPlayer())
                                 .when(
                                         LootItemRandomChanceWithEnchantedBonusCondition.randomChanceAndLootingBoost(
-                                                registries,
+                                                registries.lookupOrThrow(Registries.ENCHANTMENT),
                                                 0.05F,
                                                 0.01F
                                         )
@@ -114,11 +110,11 @@ public class MagicConchShellLootTableProvider {
             if (UNDEAD_LOOT_TABLES.contains(key)) {
                 tableBuilder.withPool(
                         LootPool.lootPool()
-                                .setRolls(ConstantValue.exactly(1.0F))
+                                .setRolls(ContextIntProviders.exactly(1))
                                 .add(
                                         LootItem.lootTableItem(MagicConchShellItems.NASTY_PATTY)
-                                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 2.0F)))
-                                                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(registries, UniformGenerator.between(0.0F, 1.0F)))
+                                                .apply(SetItemCountFunction.setCount(ContextIntProviders.between(0, 2)))
+                                                .apply(EnchantedCountIncreaseFunction.lootingMultiplier(registries.lookupOrThrow(Registries.ENCHANTMENT), ContextFloatProviders.between(0.0F, 1.0F)))
 
                                 )
                                 .when(LootItemKilledByPlayerCondition.killedByPlayer())
@@ -145,4 +141,3 @@ public class MagicConchShellLootTableProvider {
         modifyLootTables();
     }
 }
- */
