@@ -118,11 +118,15 @@ It can be crafted with a Stick, a String, 2 Planks and a Nautilus Shell.
 
 ## Gallery
 
+<img src="https://github.com/TravikSkoot/magic-conch-shell-fabric/blob/master/docs/images/magic_conch_shell.png?raw=true" width="500"/>
+
+The Magic Conch Shell
+
 <img src="https://github.com/TravikSkoot/magic-conch-shell-fabric/blob/master/docs/images/magic_conch_shell_brush.png?raw=true" width="500"/>
 
 The Magic Conch Shell found in a trail ruin
 
-<img src="https://github.com/TravikSkoot/magic-conch-shell-fabric/blob/master/docs/images/magic_conch_shell.png?raw=true" width="500"/>
+<img src="https://github.com/TravikSkoot/magic-conch-shell-fabric/blob/master/docs/images/magic_conch_shell_buried_treasure.png?raw=true" width="500"/>
 
 The Magic Conch Shell found in a buried treasure chest
 
