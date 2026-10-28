@@ -9,6 +9,7 @@ import net.minecraft.advancements.predicates.ItemPredicate;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.entity.monster.zombie.Frostbite;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -28,6 +29,8 @@ public class MagicConchShellLootTableProvider {
 
     private static final ResourceKey<LootTable> CAMEL_HUSK =
             ResourceKey.create(Registries.LOOT_TABLE, Identifier.withDefaultNamespace("entities/camel_husk"));
+    private static final ResourceKey<LootTable> FROSTBITE =
+            ResourceKey.create(Registries.LOOT_TABLE, Identifier.withDefaultNamespace("entities/frostbite"));
     private static final ResourceKey<LootTable> DROWNED =
             ResourceKey.create(Registries.LOOT_TABLE, Identifier.withDefaultNamespace("entities/drowned"));
     private static final ResourceKey<LootTable> HUSK =
@@ -49,6 +52,7 @@ public class MagicConchShellLootTableProvider {
 
     private static final Set<ResourceKey<LootTable>> UNDEAD_LOOT_TABLES = Set.of(
             CAMEL_HUSK,
+            FROSTBITE,
             DROWNED,
             HUSK,
             ZOGLIN,
