@@ -36,8 +36,8 @@
 		"magic-conch-shell.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.3-alpha",
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.4-alpha",
 		"java": ">=25",
 		"fabric-api": "*"
 	}
