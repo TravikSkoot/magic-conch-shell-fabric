@@ -25,10 +25,27 @@ public class MagicConchShellConfig {
     private static final Type MAP_TYPE = new TypeToken<Map<String, String>>() {}.getType();
 
     private static final Set<String> SUPPORTED_CONFIG_LANGUAGES = Set.of(
+            "ar_sa",
+            "bn_in",
             "de_de",
+            "en_pt",
+            "en_us",
+            "es_es",
+            "fr_fr",
+            "hi_in",
+            "it_it",
+            "ja_jp",
+            "ko_kr",
             "ksh",
             "lol_us",
-            "en_pt"
+            "nl_nl",
+            "pl_pl",
+            "pt_br",
+            "ru_ru",
+            "tr_tr",
+            "zh_cn",
+            "zh_hk",
+            "zh_tw"
     );
 
     private static final String FALLBACK_LANGUAGE = "en_us";
